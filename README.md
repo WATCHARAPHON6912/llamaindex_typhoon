@@ -2,7 +2,7 @@
 
 ### install  
 ```sh
-pip install git+https://github.com/WATCHARAPHON6912/Modbus_Film69.git
+pip install git+https://github.com/WATCHARAPHON6912/llamaindex_typhoon.git
 ```
 ### example
 ```python
