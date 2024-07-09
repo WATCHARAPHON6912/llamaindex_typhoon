@@ -8,7 +8,7 @@ pip install git+https://github.com/WATCHARAPHON6912/llamaindex_typhoon.git
 ```python
 from llama_index.core import VectorStoreIndex,SimpleDirectoryReader,ServiceContext
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llamaindex_typhoon.typhoon import Typhoon
+from llamaindexTyphoon import Typhoon
 
 embed_model=HuggingFaceEmbedding(model_name='kornwtp/SCT-KD-model-XLMR')
 documents=SimpleDirectoryReader("data").load_data()
