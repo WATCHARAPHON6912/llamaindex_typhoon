@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="LlamaindexTyphoon",
+    name="llamaindex_typhoon",
     version="0.0.3",
-    py_modules=["LlamaindexTyphoon"],  # Must match the filename 'typhoon.py'
+    py_modules=["llamaindex_typhoon"],  # Must match the filename 'typhoon.py'
     install_requires=[
         "llama-index",
         "llama-index-llms-openai-like"
     ],
     entry_points={
         'console_scripts': [
-            'LlamaindexTyphoon=typhoon:main',  # Ensure it calls the 'main' function from typhoon.py
+            'llamaindex_typhoon=typhoon:main',  # Ensure it calls the 'main' function from typhoon.py
         ],
     },
     classifiers=[
