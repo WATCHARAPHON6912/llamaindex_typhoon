@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="llamaindex_typhoon",
-    version="0.0.2",
-    # description="A Modbus communication module for Film69 devices",
-    py_modules=["typhoon"],  # ต้องตรงกับชื่อไฟล์ Modbus_Film69.py
+    version="0.0.3",
+    description="A Modbus communication module for Film69 devices",
+    py_modules=["typhoon"],  # Must match the filename 'typhoon.py'
     install_requires=[
         "llama-index",
     ],
     entry_points={
         'console_scripts': [
-            'llamaindex_typhoon=llamaindex_typhoon:typhoon',
+            'llamaindex_typhoon=typhoon:main',  # Ensure it calls the 'main' function from typhoon.py
         ],
     },
     classifiers=[
