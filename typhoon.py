@@ -27,14 +27,3 @@ class Typhoon(OpenAILike):
     def class_name(cls) -> str:
         return "Typhoon"
 
-def main():
-    parser = argparse.ArgumentParser(description="Typhoon CLI")
-    parser.add_argument("--model", required=True, help="Model name")
-    parser.add_argument("--api_key", help="API key")
-    args = parser.parse_args()
-
-    typhoon_instance = Typhoon(model=args.model, api_key=args.api_key)
-    print(f"Class Name: {typhoon_instance.class_name()}")
-
-if __name__ == "__main__":
-    main()
