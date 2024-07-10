@@ -29,6 +29,7 @@ for text in streaming_response.response_gen:
     response_txt += text
 streaming_response.response_txt = response_txt
 ```
+#### MilvusVectorStore
 ```python
 
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
