@@ -75,7 +75,7 @@ from llama_index.vector_stores.milvus import MilvusVectorStore
 from llama_index.core import Document
 
 Settings.embed_model = HuggingFaceEmbedding(model_name="kornwtp/SCT-KD-model-XLMR")
-Settings.llm = Typhoon(model="typhoon-v1.5x-70b-instruct",api_key="sk-cBgaO2MQ0kA2LibP3ttJaVEp77XQvNeyqzP7TOkLHAHA4Sc6")
+Settings.llm = Typhoon(model="typhoon-v1.5x-70b-instruct",api_key="you_api_key")
 
 
 vector_store = MilvusVectorStore(
@@ -88,7 +88,7 @@ index = VectorStoreIndex.from_documents(
 )
 query_engine = index.as_query_engine(streaming=True)
 
-streaming_response = query_engine.query("รายชื่ออธิการบดีของ สจล. คนปัจจุบัน")
+streaming_response = query_engine.query("you_prompt")
 # streaming_response.print_response_stream()
 response_txt = ""
 for text in streaming_response.response_gen:
